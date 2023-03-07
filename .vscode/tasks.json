@@ -4,12 +4,25 @@
 		{
 			"type": "shell",
 			"command": "cargo",
-			"args": ["build"],
+			"args": [
+				"build"
+			],
 			"problemMatcher": [
 				"$rustc"
 			],
-			"group": "build",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
 			"label": "cargo build"
+		},
+		{
+			"type": "cargo",
+			"command": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"label": "rust: cargo run"
 		}
 	]
 }

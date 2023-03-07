@@ -7,7 +7,7 @@
         {
             "name": "Debug",
             "type": "cppdbg",
-            "preLaunchTask": "build",
+            "preLaunchTask": "cargo build",
             "request": "launch",
             "program":"${workspaceFolder}/target/debug/${workspaceFolderBasename}",
             "args": [],
